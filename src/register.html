@@ -4,6 +4,7 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>My Web App</title> 
     <link rel="stylesheet" href="style.scss" />
+    <script type="module" src="register.ts"></script>
   </head>
   <body>
     <div class="page-container">
@@ -20,9 +21,14 @@
       </div>
 
       <form class="login-form">
-        <input class="input" placeholder="email"/>
-        <input class="password-input" placeholder="password" type="password"/>
-        <button type="submit" class="login-button">Sign In</button>
+        <input class="input" id="firstName" placeholder="First Name" type="text">
+        <p id="firstName-validation"></p>
+        <input class="input" id="lastName" placeholder="Last Name" type="text">
+        <input class="input" id="email-input" placeholder="Email" type="email">
+        <input class="date-input" id="birthday" placeholder="birthday" type="date">
+        <input class="password-input" id="password-input" placeholder="password" type="password">
+        <input class="password-input" id="confirmPassword" placeholder="repeat password" type="password">
+        <button type="submit" class="login-button">Sign up</button>
       </form>
 
     </div>
